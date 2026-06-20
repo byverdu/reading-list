@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading List</title>
+  <meta name="description" content="Articles worth reading." />
+  <style>
+    :root {
+      --bg:        #0f0f0f;
+      --surface:   #161616;
+      --border:    #272727;
+      --text:      #e8e4dc;
+      --muted:     #7a756c;
+      --accent:    #c8a96e;
+      --accent-dim:#7a6540;
+      --tag-bg:    #1e1c18;
+      --tag-active:#2a2318;
+      --radius:    4px;
+      --font-mono: 'JetBrains Mono', 'Fira Mono', 'Cascadia Code', monospace;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ── */
+    .shell {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    header p {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ── Controls ── */
+    .controls {
+      padding: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    #search {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      padding: 0.55rem 0.75rem 0.55rem 2.2rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    #search:focus { border-color: var(--accent-dim); }
+    #search::placeholder { color: var(--muted); }
+
+    /* ── Tags ── */
+    .tag-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .tag-bar-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-right: 0.2rem;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.6rem;
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+      user-select: none;
+    }
+
+    .tag:hover { color: var(--text); border-color: var(--accent-dim); }
+
+    .tag.active {
+      background: var(--tag-active);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── List ── */
+    .list-meta {
+      padding: 1.25rem 0 0.75rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+
+    .list-meta span { color: var(--accent); }
+
+    #articles {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── Article card ── */
+    .article {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.5rem 1rem;
+      align-items: start;
+      transition: background 0.12s;
+    }
+
+    .article:first-child { border-top: 1px solid var(--border); }
+
+    .article-main { min-width: 0; }
+
+    .article-title {
+      font-size: 0.975rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+      display: inline;
+    }
+
+    .article-title:hover { color: var(--accent); }
+
+    .article-title::after {
+      content: ' ↗';
+      font-size: 0.75em;
+      color: var(--muted);
+      vertical-align: super;
+    }
+
+    .article-notes {
+      margin-top: 0.3rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.6rem;
+    }
+
+    .article-tag {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.04em;
+      padding: 0.15rem 0.45rem;
+      transition: color 0.12s, border-color 0.12s;
+    }
+
+    .article-tag:hover { color: var(--accent); border-color: var(--accent-dim); }
+    .article-tag.active { color: var(--accent); border-color: var(--accent); }
+
+    .article-date {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-top: 0.15rem;
+    }
+
+    /* ── Empty state ── */
+    .empty {
+      padding: 3rem 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    .empty strong { color: var(--text); display: block; margin-bottom: 0.25rem; }
+
+    /* ── Footer ── */
+    footer {
+      padding: 2.5rem 0 3rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+
+    footer a { color: var(--accent-dim); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* ── Highlight match ── */
+    mark {
+      background: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      header { padding: 2rem 0 1.5rem; }
+      header h1 { font-size: 1.3rem; }
+      .article { grid-template-columns: 1fr; }
+      .article-date { order: -1; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <header>
+    <div class="header-eyebrow">byverdu / reading-list</div>
+    <h1>Reading List</h1>
+    <p>Articles, essays, and references worth keeping.</p>
+  </header>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input id="search" type="search" placeholder="Search titles, notes, tags…" autocomplete="off" />
+    </div>
+    <div class="tag-bar">
+      <span class="tag-bar-label">Tags</span>
+      <div id="tag-list"></div>
+    </div>
+  </div>
+
+  <p class="list-meta" id="list-meta"></p>
+  <ul id="articles"></ul>
+
+  <footer>
+    <p>
+      Add entries in
+      <a href="https://github.com/byverdu/reading-list/blob/main/reading-list.json" target="_blank" rel="noopener">reading-list.json</a>
+      · <a href="https://github.com/byverdu/reading-list" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</div>
+
+<script>
+  (() => {
+    let allArticles = [];
+    let activeTags = new Set();
+    let searchQuery = '';
+
+    // ── Fetch data ──
+    async function init() {
+      try {
+        const res = await fetch('./reading-list.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        allArticles = await res.json();
+        allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+        buildTagBar();
+        render();
+      } catch (e) {
+        document.getElementById('articles').innerHTML =
+          `<li class="empty"><strong>Could not load reading list.</strong>${e.message}</li>`;
+      }
+    }
+
+    // ── Build tag bar ──
+    function buildTagBar() {
+      const counts = {};
+      allArticles.forEach(a => (a.tags || []).forEach(t => counts[t] = (counts[t] || 0) + 1));
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([t]) => t);
+
+      const container = document.getElementById('tag-list');
+      container.style.display = 'flex';
+      container.style.flexWrap = 'wrap';
+      container.style.gap = '0.4rem';
+
+      sorted.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.className = 'tag';
+        btn.textContent = tag;
+        btn.dataset.tag = tag;
+        btn.addEventListener('click', () => toggleTag(tag));
+        container.appendChild(btn);
+      });
+    }
+
+    function toggleTag(tag) {
+      if (activeTags.has(tag)) activeTags.delete(tag);
+      else activeTags.add(tag);
+      document.querySelectorAll('.tag[data-tag]').forEach(b => {
+        b.classList.toggle('active', activeTags.has(b.dataset.tag));
+      });
+      render();
+    }
+
+    // ── Filter ──
+    function getFiltered() {
+      const q = searchQuery.toLowerCase();
+      return allArticles.filter(a => {
+        const matchesTag = activeTags.size === 0 || (a.tags || []).some(t => activeTags.has(t));
+        if (!matchesTag) return false;
+        if (!q) return true;
+        return (
+          a.title.toLowerCase().includes(q) ||
+          (a.notes || '').toLowerCase().includes(q) ||
+          (a.tags || []).some(t => t.toLowerCase().includes(q))
+        );
+      });
+    }
+
+    // ── Highlight ──
+    function highlight(text, q) {
+      if (!q) return escHtml(text);
+      const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      return escHtml(text).replace(
+        new RegExp(`(${escaped})`, 'gi'),
+        '<mark>$1</mark>'
+      );
+    }
+
+    function escHtml(s) {
+      return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // ── Format date ──
+    function fmtDate(iso) {
+      if (!iso) return '';
+      const [y, m, d] = iso.split('-');
+      return `${y}·${m}·${d}`;
+    }
+
+    // ── Render ──
+    function render() {
+      const filtered = getFiltered();
+      const q = searchQuery.toLowerCase();
+
+      const meta = document.getElementById('list-meta');
+      meta.innerHTML = `<span>${filtered.length}</span> of <span>${allArticles.length}</span> articles`;
+
+      const list = document.getElementById('articles');
+      if (filtered.length === 0) {
+        list.innerHTML = '<li class="empty"><strong>No articles found.</strong>Try a different search or tag.</li>';
+        return;
+      }
+
+      list.innerHTML = filtered.map(a => {
+        const tags = (a.tags || []).map(t => `
+          <button class="article-tag ${activeTags.has(t) ? 'active' : ''}" data-tag="${escHtml(t)}">${escHtml(t)}</button>
+        `).join('');
+
+        const notes = a.notes ? `<p class="article-notes">${highlight(a.notes, q)}</p>` : '';
+
+        return `
+          <li class="article" data-id="${a.id}">
+            <div class="article-main">
+              <a class="article-title" href="${escHtml(a.url)}" target="_blank" rel="noopener">
+                ${highlight(a.title, q)}
+              </a>
+              ${notes}
+              <div class="article-tags">${tags}</div>
+            </div>
+            <time class="article-date" datetime="${escHtml(a.date || '')}">${fmtDate(a.date)}</time>
+          </li>
+        `;
+      }).join('');
+
+      // Wire up inline tag buttons
+      list.querySelectorAll('.article-tag').forEach(btn => {
+        btn.addEventListener('click', () => toggleTag(btn.dataset.tag));
+      });
+    }
+
+    // ── Search ──
+    document.getElementById('search').addEventListener('input', e => {
+      searchQuery = e.target.value.trim();
+      render();
+    });
+
+    init();
+  })();
+</script>
+</body>
+</html>

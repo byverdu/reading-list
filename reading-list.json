@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "The Web's Grain",
+    "url": "https://frankchimero.com/blog/2015/the-webs-grain/",
+    "tags": ["design", "web", "essay"],
+    "date": "2025-06-10",
+    "notes": "Frank Chimero on designing with the grain of the web rather than against it."
+  },
+  {
+    "id": "2",
+    "title": "A Complete Guide to CSS Grid",
+    "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    "tags": ["css", "frontend", "reference"],
+    "date": "2025-06-12",
+    "notes": "The definitive CSS Grid reference — worth revisiting."
+  },
+  {
+    "id": "3",
+    "title": "The Future of Micro-Frontends",
+    "url": "https://martinfowler.com/articles/micro-frontends.html",
+    "tags": ["architecture", "frontend", "micro-frontends"],
+    "date": "2025-06-14",
+    "notes": ""
+  },
+  {
+    "id": "4",
+    "title": "Shape Up: Stop Running in Circles",
+    "url": "https://basecamp.com/shapeup",
+    "tags": ["product", "process", "essay"],
+    "date": "2025-06-15",
+    "notes": "Basecamp's approach to product development cycles."
+  }
+]

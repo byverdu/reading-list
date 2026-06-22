@@ -5,9 +5,7 @@ Personal reading list hosted on GitHub Pages. Add an article → push → it's l
 ## Why don't use a bookmark system?
 
 In the pursue of happiness to find the perfect browser, I came across [Helium](https://helium.computer/).
-
-A browser based in chromium but ultra minimal and guess what?
-
+A browser based in chromium which is ultra minimal but guess what?
 They don't have things like `Sync Accounts` or even a `Password manager`...
 
 Things that I can perfectly live without them in the pursue of happiness :)

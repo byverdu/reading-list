@@ -2,6 +2,20 @@
 
 Personal reading list hosted on GitHub Pages. Add an article → push → it's live.
 
+## Why don't use a bookmark system?
+
+In the pursue of happiness to find the perfect browser, I came across [Helium](https://helium.computer/).
+
+A browser based in chromium but ultra minimal and guess what?
+
+They don't have things like `Sync Accounts` or even a `Password manager`...
+
+Things that I can perfectly live without them in the pursue of happiness :)
+
+I find it more centralised to have the reading list all contained in a single
+JSON file, rather than scattered across multiple bookmarks
+and folders in different browsers.
+
 **Live site:** [`https://byverdu.github.io/reading-list`](https://byverdu.github.io/reading-list)
 
 ---

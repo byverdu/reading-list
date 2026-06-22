@@ -6,4 +6,4 @@ pre-commit:
       stage_fixed: true
     - name: markdownlint
       glob: "*.md"
-      run: pnpm markdownlint-cli2 {staged_files}
+      run: pnpm markdownlint-cli2 --fix {staged_files}

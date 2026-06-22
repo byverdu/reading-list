@@ -2,7 +2,7 @@
 
 Personal reading list hosted on GitHub Pages. Add an article → push → it's live.
 
-**Live site:** `https://byverdu.github.io/reading-list`
+**Live site:** [`https://byverdu.github.io/reading-list`](https://byverdu.github.io/reading-list)
 
 ---
 

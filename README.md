@@ -25,14 +25,14 @@ Push to `main` — GitHub Actions deploys automatically in ~30 seconds.
 
 ### Field reference
 
-| Field   | Required | Description                                      |
-|---------|----------|--------------------------------------------------|
-| `id`    | ✓        | Unique string (use a number or slug)             |
-| `title` | ✓        | Article title                                    |
-| `url`   | ✓        | Full URL                                         |
-| `tags`  | ✓        | Array of lowercase strings                       |
-| `date`  | ✓        | ISO date `YYYY-MM-DD`                            |
-| `notes` | –        | Optional personal note (shown under the title)  |
+| Field   | Required | Description                                    |
+| ------- | -------- | ---------------------------------------------- |
+| `id`    | ✓        | Unique string (use a number or slug)           |
+| `title` | ✓        | Article title                                  |
+| `url`   | ✓        | Full URL                                       |
+| `tags`  | ✓        | Array of lowercase strings                     |
+| `date`  | ✓        | ISO date `YYYY-MM-DD`                          |
+| `notes` | –        | Optional personal note (shown under the title) |
 
 ---
 
@@ -51,14 +51,24 @@ That's it. No npm, no build step.
 
 Suggested tag vocabulary — use whatever works for you:
 
-| Tag             | Use for                                  |
-|-----------------|------------------------------------------|
-| `frontend`      | CSS, JS, browser APIs                    |
-| `architecture`  | System design, patterns                  |
-| `performance`   | Web perf, core web vitals                |
-| `accessibility` | a11y                                     |
-| `design`        | Visual design, UX                        |
-| `essay`         | Opinion pieces, long reads               |
-| `reference`     | Docs, cheatsheets, guides                |
-| `tooling`       | DX, build tools, editors                 |
-| `career`        | Soft skills, engineering culture         |
+| Tag             | Use for                          |
+| --------------- | -------------------------------- |
+| `frontend`      | CSS, JS, browser APIs            |
+| `architecture`  | System design, patterns          |
+| `performance`   | Web perf, core web vitals        |
+| `accessibility` | a11y                             |
+| `design`        | Visual design, UX                |
+| `essay`         | Opinion pieces, long reads       |
+| `reference`     | Docs, cheatsheets, guides        |
+| `tooling`       | DX, build tools, editors         |
+| `career`        | Soft skills, engineering culture |
+
+---
+
+## TODO
+
+- [x] Add favicon
+- [x] Add hot reload
+- [x] Set Biome
+- [] Add count to tags + color map from bigger to smaller
+- [] Change date format

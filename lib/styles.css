@@ -75,6 +75,9 @@ header {
 	flex-direction: column;
 	gap: 1rem;
 	border-bottom: 1px solid var(--border);
+	position: sticky;
+	top: 0;
+	background: var(--bg);
 }
 
 .search-wrap {
@@ -292,6 +295,9 @@ footer {
 	font-size: 0.75rem;
 	color: var(--muted);
 	font-family: var(--font-mono);
+	position: sticky;
+	bottom: 0;
+	background: var(--bg);
 
 	p {
 		display: flex;

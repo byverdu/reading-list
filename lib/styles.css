@@ -38,6 +38,9 @@ body {
 	max-width: 780px;
 	margin: 0 auto;
 	padding: 0 1.5rem;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 /* ── Header ── */
@@ -298,6 +301,7 @@ footer {
 	position: sticky;
 	bottom: 0;
 	background: var(--bg);
+	margin-top: auto;
 
 	p {
 		display: flex;

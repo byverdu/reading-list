@@ -43,7 +43,7 @@ Push to `main` — GitHub Actions deploys automatically in ~30 seconds.
 | `title` | ✓        | Article title                                  |
 | `url`   | ✓        | Full URL                                       |
 | `tags`  | ✓        | Array of lowercase strings                     |
-| `date`  | ✓        | ISO date `YYYY-MM-DD`                          |
+| `date`  | ✓        | ISO date `DD-MM-YYYY`                          |
 | `notes` | –        | Optional personal note (shown under the title) |
 
 ---

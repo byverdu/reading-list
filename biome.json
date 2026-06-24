@@ -17,7 +17,9 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"preset": "recommended"
+			"correctness": {
+				"noUndeclaredVariables": "error"
+			}
 		}
 	},
 	"javascript": {

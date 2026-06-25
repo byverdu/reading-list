@@ -23,6 +23,7 @@
 		}
 	},
 	"javascript": {
+		"globals": ["Tag", "Tags"],
 		"formatter": {
 			"quoteStyle": "double",
 			"semicolons": "always",

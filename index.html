@@ -33,7 +33,7 @@
 				<p>Articles, essays, and references worth keeping.</p>
 			</header>
 
-			<div class="controls">
+			<search class="controls" aria-label="Filter articles">
 				<div class="search-wrap">
 					<svg
 						width="14"
@@ -42,25 +42,30 @@
 						fill="none"
 						stroke="currentColor"
 						stroke-width="2"
-						role="img"
-						aria-labelledby="search"
+						aria-hidden="true"
 					>
-						<title>Search</title>
 						<circle cx="11" cy="11" r="8" />
 						<path d="m21 21-4.35-4.35" />
 					</svg>
+					<label for="search" class="sr-only">Search articles</label>
 					<input
 						id="search"
 						type="search"
 						placeholder="Search titles, notes, tags…"
 						autocomplete="off"
+						aria-controls="articles"
 					>
 				</div>
 				<tags-list></tags-list>
-			</div>
+			</search>
 
-			<p class="list-meta" id="list-meta"></p>
-			<ul id="articles"></ul>
+			<p
+				class="list-meta"
+				id="list-meta"
+				aria-live="polite"
+				aria-atomic="true"
+			></p>
+			<ul id="articles" aria-label="Article results"></ul>
 
 			<footer>
 				<p>
@@ -69,6 +74,7 @@
 						href="https://github.com/byverdu/reading-list"
 						target="_blank"
 						rel="noopener"
+						aria-label="GitHub (opens in new tab)"
 						>GitHub</a
 					>
 				</p>

@@ -7,6 +7,22 @@
 		<meta name="description" content="Articles worth reading.">
 		<link rel="stylesheet" href="./lib/styles.css">
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
+		<link rel="preload" href="lib/reading-list.json" as="fetch" crossorigin>
+		<script>
+		window.articlesReady = fetch("lib/reading-list.json")
+			.then((response) => {
+				if (!response.ok) throw new Error(`HTTP ${response.status}`);
+				return response.json();
+			})
+			.then((articles) => {
+				const toSortable = (date) => date.split("-").reverse().join("-");
+				articles.sort(
+					(a, b) => new Date(toSortable(b.date)) - new Date(toSortable(a.date)),
+				);
+				window.allArticles = articles;
+				return articles;
+			});
+		</script>
 	</head>
 
 	<body>
@@ -40,10 +56,7 @@
 						autocomplete="off"
 					>
 				</div>
-				<div class="tag-bar">
-					<span class="tag-bar-label">Tags</span>
-					<div id="tag-list"></div>
-				</div>
+				<tags-list></tags-list>
 			</div>
 
 			<p class="list-meta" id="list-meta"></p>
@@ -61,7 +74,18 @@
 				</p>
 			</footer>
 		</div>
-
+		<template id="tag-list-template">
+			<div class="tag-bar">
+				<span class="tag-bar-label">Tags</span>
+				<div id="tag-list"></div>
+			</div>
+		</template>
+		<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			customElements.define("tags-list", Tags);
+			customElements.define("tag-item", Tag, { extends: "button" });
+		});
+		</script>
 		<script src="./lib/script.js"></script>
 	</body>
 </html>

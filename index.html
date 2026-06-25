@@ -9,13 +9,13 @@
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
 		<link rel="preload" href="lib/reading-list.json" as="fetch" crossorigin>
 		<script>
-		window.articlesReady = fetch("lib/reading-list.json")
+		window.articlesReady = fetch('lib/reading-list.json')
 			.then((response) => {
 				if (!response.ok) throw new Error(`HTTP ${response.status}`);
 				return response.json();
 			})
 			.then((articles) => {
-				const toSortable = (date) => date.split("-").reverse().join("-");
+				const toSortable = (date) => date.split('-').reverse().join('-');
 				articles.sort(
 					(a, b) => new Date(toSortable(b.date)) - new Date(toSortable(a.date)),
 				);
@@ -80,10 +80,24 @@
 				<div id="tag-list"></div>
 			</div>
 		</template>
+		<template id="article-list-item-template">
+			<div class="article-main">
+				<a
+					href="placeholder"
+					class="article-title"
+					target="_blank"
+					rel="noopener"
+					>placeholder</a
+				>
+				<div class="article-tags"></div>
+			</div>
+			<time class="article-date"></time>
+		</template>
 		<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			customElements.define("tags-list", Tags);
-			customElements.define("tag-item", Tag, { extends: "button" });
+		document.addEventListener('DOMContentLoaded', () => {
+			customElements.define('tags-list', Tags);
+			customElements.define('tag-item', Tag, { extends: 'button' });
+			customElements.define('article-item', ArticleItem, { extends: 'li' });
 		});
 		</script>
 		<script src="./lib/script.js"></script>

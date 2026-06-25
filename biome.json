@@ -23,9 +23,9 @@
 		}
 	},
 	"javascript": {
-		"globals": ["Tag", "Tags"],
+		"globals": ["Tag", "Tags", "ArticleItem"],
 		"formatter": {
-			"quoteStyle": "double",
+			"quoteStyle": "single",
 			"semicolons": "always",
 			"trailingCommas": "all"
 		}

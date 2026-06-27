@@ -1,5 +1,8 @@
 pre-commit:
   jobs:
+    - name: generate meta
+      glob: "lib/reading-list.json"
+      run: node scripts/gen-meta.js && git add lib/reading-list-meta.json
     - name: biome check
       glob: "*.{js,css,html,json}"
       run: pnpm biome check --write {staged_files}

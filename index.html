@@ -7,22 +7,6 @@
 		<meta name="description" content="Articles worth reading.">
 		<link rel="stylesheet" href="./lib/styles.css">
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
-		<link rel="preload" href="lib/reading-list.json" as="fetch" crossorigin>
-		<script>
-		window.articlesReady = fetch('lib/reading-list.json')
-			.then((response) => {
-				if (!response.ok) throw new Error(`HTTP ${response.status}`);
-				return response.json();
-			})
-			.then((articles) => {
-				const toSortable = (date) => date.split('-').reverse().join('-');
-				articles.sort(
-					(a, b) => new Date(toSortable(b.date)) - new Date(toSortable(a.date)),
-				);
-				window.allArticles = articles;
-				return articles;
-			});
-		</script>
 	</head>
 
 	<body>

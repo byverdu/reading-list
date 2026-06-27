@@ -57,15 +57,19 @@
 					>
 				</div>
 				<tags-list></tags-list>
+				<div id="tags-skeleton" class="skeleton-tags-bar">
+					<div class="skeleton skeleton-tag"></div>
+					<div class="skeleton skeleton-tag"></div>
+					<div class="skeleton skeleton-tag"></div>
+					<div class="skeleton skeleton-tag"></div>
+					<div class="skeleton skeleton-tag"></div>
+				</div>
 			</search>
 
-			<p
-				class="list-meta"
-				id="list-meta"
-				aria-live="polite"
-				aria-atomic="true"
-			></p>
-			<ul id="articles" aria-label="Article results"></ul>
+			<p class="list-meta" id="list-meta" aria-live="polite" aria-atomic="true">
+				<span class="skeleton skeleton-meta"></span>
+			</p>
+			<ul id="articles" aria-label="Article results" aria-busy="true"></ul>
 
 			<footer>
 				<p>

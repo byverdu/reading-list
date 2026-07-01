@@ -351,6 +351,7 @@ footer {
 		color: var(--accent-dim);
 		text-decoration: none;
 
+		/* biome-ignore lint/style/noDescendingSpecificity: footer links and .tag never match the same element */
 		&:hover {
 			color: var(--accent);
 		}

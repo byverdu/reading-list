@@ -119,6 +119,7 @@ header {
 	padding: 0.55rem 0.75rem 0.55rem 2.2rem;
 	outline: none;
 	transition: border-color 0.15s;
+	z-index: 1;
 
 	&:focus {
 		border-color: var(--accent-dim);
@@ -208,6 +209,8 @@ header {
 	gap: 0.5rem 1rem;
 	align-items: start;
 	transition: background 0.12s;
+	content-visibility: auto;
+	contain-intrinsic-size: auto 90px;
 
 	&:first-child {
 		border-top: 1px solid var(--border);

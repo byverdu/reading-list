@@ -55,6 +55,23 @@ body {
 	min-height: 100vh;
 }
 
+/* ── Offline banner ── */
+#offline-banner {
+	background: var(--tag-active);
+	color: var(--accent);
+	border-bottom: 1px solid var(--accent-dim);
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	line-height: 1.4;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	margin: 0 -1.5rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	height: 36px;
+}
+
 /* ── Header ── */
 header {
 	padding: 3.5rem 0 2.5rem;
@@ -93,6 +110,11 @@ header {
 	position: sticky;
 	top: 0;
 	background: var(--bg);
+	z-index: 1;
+}
+
+body:has(#offline-banner:not([hidden])) .controls {
+	top: 36px;
 }
 
 .search-wrap {

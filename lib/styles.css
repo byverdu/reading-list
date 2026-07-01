@@ -178,6 +178,7 @@ body:has(#offline-banner:not([hidden])) .controls {
 .tag {
 	background: var(--tag-bg);
 	border: 1px solid var(--border);
+	border-color: var(--heat, var(--border));
 	border-radius: 2px;
 	color: var(--muted);
 	cursor: pointer;

@@ -1,4 +1,7 @@
 const CACHE = 'reading-list-v1'; // bump to invalidate all cached assets on deploy
+
+// Data files drive freshness (hash check) — never serve them stale.
+const NETWORK_FIRST = ['/lib/reading-list.json', '/lib/reading-list-meta.json'];
 const ASSETS = [
 	'./',
 	'./index.html',
@@ -35,16 +38,23 @@ self.addEventListener('fetch', (e) => {
 	) {
 		return; // let the browser handle it (e.g. external articles)
 	}
-	e.respondWith(
+	const { pathname } = new URL(request.url);
+	const networkFirst = NETWORK_FIRST.some((path) => pathname.endsWith(path));
+
+	event.respondWith(
 		caches.open(CACHE).then(async (cache) => {
 			const cached = await cache.match(request);
 			const network = fetch(request)
-				.then((res) => {
-					if (res.ok) cache.put(request, res.clone());
-					return res;
+				.then((response) => {
+					if (response.ok) cache.put(request, response.clone());
+					return response;
 				})
-				.catch(() => cached || cache.match('./index.html')); // offline nav fallback
-			return cached || network;
+				.catch(() => cached || cache.match('./index.html')); // offline fallback
+
+			// Data files: fresh when online, cached only when offline (network
+			// already falls back to `cached` on failure via its .catch above).
+			// Shell: stale-while-revalidate (cached instantly, refreshed in bg).
+			return networkFirst ? network : cached || network;
 		}),
 	);
 });

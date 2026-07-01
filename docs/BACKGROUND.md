@@ -1,14 +1,15 @@
 # Background & Architecture Notes
 
-This document captures the *why* behind three non-obvious areas of the app:
-accessibility, caching, and render performance. The code is small; the reasoning
-is the part worth keeping.
+This document captures the *why* behind the non-obvious areas of the app:
+accessibility, caching, render performance, and offline support. The code is
+small; the reasoning is the part worth keeping.
 
 ## Table of Contents
 
 - [1. Accessibility](#1-accessibility)
 - [2. Caching (localStorage + content hash)](#2-caching-localstorage--content-hash)
 - [3. Render performance](#3-render-performance)
+- [4. Service worker (offline)](#4-service-worker-offline)
 
 ---
 
@@ -237,3 +238,89 @@ Guide: [https://developer.chrome.com/docs/devtools/performance](https://develope
 - **IntersectionObserver virtualization** — real benefit only at ~1,000+ rows. At
   384 it's complexity users wouldn't notice; `content-visibility` recovers
   most of the gain for one line of CSS.
+
+---
+
+## 4. Service worker (offline)
+
+### Goal
+
+Make the **app itself** (shell + article list) load and stay searchable with no
+connection — the "browsing on the tube" scenario. External article links can't work
+offline (different origin); reloading those tabs once back online is accepted.
+
+Requires **one online visit** first, so the worker can install and precache. A
+service worker cannot prefetch before its page has ever run.
+
+### What `sw.js` does
+
+- **Precache on `install`** — the shell (`index.html`, `styles.css`, `script.js`,
+  favicon) plus the data files, so the first offline load works.
+- **Clean up on `activate`** — delete any cache whose name isn't the current
+  `CACHE` constant.
+- **`fetch` routing** — see the strategy split below. Cross-origin requests
+  (external articles) are ignored so they hit the network normally.
+
+### Caching strategies (and which we use)
+
+The five standard service-worker strategies:
+
+<!-- markdownlint-disable MD013 -->
+
+| Strategy | Speed | Freshness | Offline | Good for |
+| --- | --- | --- | --- | --- |
+| **Cache First** | instant | can be stale | yes | immutable/versioned assets (fonts, hashed files) |
+| **Stale-While-Revalidate** | instant | one load behind | yes | app shell — fast, self-healing |
+| **Network First** | round-trip | fresh | yes (fallback) | frequently-changing data |
+| **Network Only** | round-trip | fresh | no | analytics, POST, auth |
+| **Cache Only** | instant | frozen | yes | strict precached shell |
+
+<!-- markdownlint-enable MD013 -->
+
+This app uses a **split**:
+
+- **Shell** (HTML/CSS/JS/favicon) → **stale-while-revalidate**: instant load, and
+  edits to existing files land on the *next* reload automatically.
+- **Data** (`reading-list.json`, `reading-list-meta.json`) → **network-first**:
+  fresh when online, cached copy only as an offline fallback.
+
+### Why data must be network-first (the lesson we learned the hard way)
+
+`meta.json` carries the content `hash` that the localStorage cache (section 2) uses
+to decide whether to refetch. If the service worker serves `meta.json`
+**stale-while-revalidate**, it hands back the *old* hash first — which still matches
+the localStorage hash — so the app trusts stale data and **updates don't appear
+for several reloads**. The two caching layers fight.
+
+Serving the data files **network-first** keeps the freshness signal current: the
+hash check always sees the latest value, so the localStorage cache busts correctly
+on the first reload. The SW still provides the cached copy when genuinely offline.
+
+**Rule:** a service worker sitting in front of a hash/ETag-based freshness
+mechanism must not stale-serve the freshness signal.
+
+### When to bump the `CACHE` version
+
+Most edits don't need a bump — stale-while-revalidate refreshes existing shell files
+on the next load. Bump `CACHE` (e.g. `reading-list-v3` → `-v4`) when you:
+
+- **add or rename** a precached file (the `install` precache only re-runs when
+  `sw.js` changes),
+- **remove** a file you want purged from users' caches,
+- ship a **breaking change** that must apply atomically rather than one reload late,
+- change the `fetch` strategy in `sw.js` itself.
+
+### Gotcha during development
+
+Because the *currently-controlling* worker serves the page that fetches the new
+`sw.js`, changes can take an extra reload to take effect, and old cached data can
+mask edits. To reset cleanly: DevTools → Application → **Clear site data**
+(unregisters the SW + wipes Cache Storage + localStorage), then reload.
+
+### Links
+
+- MDN Service Worker API:
+  <https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API>
+- MDN `Cache`: <https://developer.mozilla.org/en-US/docs/Web/API/Cache>
+- Google Offline Cookbook (catalogs every strategy):
+  <https://web.dev/articles/offline-cookbook>

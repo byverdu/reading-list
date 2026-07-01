@@ -12,26 +12,26 @@ const ASSETS = [
 	'./assets/favicon.png',
 ];
 
-self.addEventListener('install', (e) => {
-	e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
+self.addEventListener('install', (event) => {
+	event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)));
 	self.skipWaiting();
 });
 
-self.addEventListener('activate', (e) => {
-	e.waitUntil(
+self.addEventListener('activate', (event) => {
+	event.waitUntil(
 		caches
 			.keys()
 			.then((keys) =>
 				Promise.all(
-					keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)),
+					keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)),
 				),
 			),
 	);
 	self.clients.claim();
 });
 
-self.addEventListener('fetch', (e) => {
-	const { request } = e;
+self.addEventListener('fetch', (event) => {
+	const { request } = event;
 	if (
 		request.method !== 'GET' ||
 		new URL(request.url).origin !== location.origin

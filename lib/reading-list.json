@@ -1,34 +1,105 @@
 [
 	{
 		"id": "1",
-		"title": "The Web's Grain",
-		"url": "https://frankchimero.com/blog/2015/the-webs-grain/",
-		"tags": ["design", "web", "essay"],
-		"date": "10-06-2025",
-		"notes": "Frank Chimero on designing with the grain of the web rather than against it."
+		"title": "online and offline events",
+		"url": "https://www.freecodecamp.org/news/how-to-check-internet-connection-status-with-javascript/",
+		"tags": ["Javascript", "Frontend"],
+		"date": "02-07-2026",
+		"notes": "Navigator events won't tell 100% about connectivity"
 	},
 	{
 		"id": "2",
-		"title": "A Complete Guide to CSS Grid",
-		"url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
-		"tags": ["css", "frontend", "reference"],
-		"date": "12-06-2025",
-		"notes": "The definitive CSS Grid reference — worth revisiting."
+		"title": "Common techniques to build offline applications",
+		"url": "https://web.dev/articles/offline-cookbook",
+		"tags": ["Javascript", "Frontend"],
+		"date": "02-07-2026"
 	},
 	{
 		"id": "3",
-		"title": "The Future of Micro-Frontends",
-		"url": "https://martinfowler.com/articles/micro-frontends.html",
-		"tags": ["architecture", "frontend", "micro-frontends"],
-		"date": "14-06-2025",
-		"notes": ""
+		"title": "A First Look at Scroll-Triggered Animations",
+		"url": "https://css-tricks.com/css-scroll-triggered-animations-first-look",
+		"tags": ["CSS", "Frontend"],
+		"date": "02-07-2026",
+		"notes": "Only available in Chrome 146 as for July 2026"
 	},
 	{
 		"id": "4",
-		"title": "Shape Up: Stop Running in Circles",
-		"url": "https://basecamp.com/shapeup",
-		"tags": ["product", "process", "essay"],
-		"date": "15-06-2025",
-		"notes": "Basecamp's approach to product development cycles."
+		"title": "Modern Web Guidance",
+		"url": "https://master.dev/blog/modern-web-guidance",
+		"tags": ["CSS", "HTML", "Javascript", "Frontend", "AI"],
+		"date": "02-07-2026",
+		"notes": "Markdown files from Google to feed context on how to write better CSS, HTML and Javascript"
+	},
+	{
+		"id": "5",
+		"title": "Stop Paying $20/Month: Use NVIDIA's Free AI Models",
+		"url": "https://blog.gopenai.com/stop-paying-20-month-use-nvidia-build-80-free-ai-models-0b08205f91b5",
+		"tags": ["AI", "Tools"],
+		"date": "02-07-2026",
+		"notes": "NVIDIA free models https://build.nvidia.com/"
+	},
+	{
+		"id": "6",
+		"title": "Cut Your Claude Token Consumption By 70x",
+		"url": "https://levelup.gitconnected.com/cut-your-ai-token-consumption-by-70x-38b15cb75489",
+		"tags": ["AI", "Tools"],
+		"date": "02-07-2026",
+		"notes": "Graphify will map your entire project into a knowledge graph you can query instead of grepping through files. More for full-stack"
+	},
+	{
+		"id": "7",
+		"title": "Containers on Mac",
+		"url": "https://githubdaily.medium.com/apple-container-1-0-released-running-linux-containers-on-mac-no-more-docker-needed-05804fc498e9",
+		"tags": ["Tools", "Backend"],
+		"date": "02-07-2026",
+		"notes": "Container is Apple's official native macOS container tool to replace Docker"
+	},
+	{
+		"id": "8",
+		"title": "Turn a codebase into an interactive knowledge graph",
+		"url": "https://levelup.gitconnected.com/every-ai-coding-tool-just-quietly-standardized-on-one-developers-side-project-41574e56e3da",
+		"tags": ["AI", "Tools"],
+		"date": "02-07-2026",
+		"notes": "More for frontend"
+	},
+	{
+		"id": "9",
+		"title": "The database client your AI agent can actually use",
+		"url": "https://tabularis.dev/",
+		"tags": ["Tools", "Database"],
+		"date": "02-07-2026",
+		"notes": "The database client your AI agent can actually use"
+	},
+	{
+		"id": "10",
+		"title": "Home of open source icon sets",
+		"url": "https://iconify.design/",
+		"tags": ["Tools", "Frontend"],
+		"date": "02-07-2026",
+		"notes": "All popular icon sets, one framework. Over 200,000 open source vector icons."
+	},
+	{
+		"id": "11",
+		"title": "UnoCSS Instant On-demand Atomic CSS Engine",
+		"url": "https://unocss.dev/",
+		"tags": ["Tools", "Frontend", "CSS"],
+		"date": "02-07-2026",
+		"notes": "On demand CSS generation"
+	},
+	{
+		"id": "12",
+		"title": "Fast Node Manager (fnm)",
+		"url": "https://github.com/Schniz/fnm#shell-setup",
+		"tags": ["Tools", "Node"],
+		"date": "02-07-2026",
+		"notes": "Alternative to nvm"
+	},
+	{
+		"id": "13",
+		"title": "Biome",
+		"url": "https://biomejs.dev/",
+		"tags": ["Tools", "Frontend"],
+		"date": "02-07-2026",
+		"notes": "Alternative to ESlint and Prettier. Is a formatter and linter together"
 	}
 ]

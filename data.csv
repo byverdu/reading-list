@@ -1,0 +1,14 @@
+id,title,url,tags,date,notes
+1,online and offline events,https://www.freecodecamp.org/news/how-to-check-internet-connection-status-with-javascript/,"Javascript,Frontend",02-07-2026,Navigator events won't tell 100% about connectivity
+2,Common techniques to build offline applications,https://web.dev/articles/offline-cookbook,"Javascript,Frontend",02-07-2026,
+3,A First Look at Scroll-Triggered Animations,https://css-tricks.com/css-scroll-triggered-animations-first-look,"CSS,Frontend",02-07-2026,Only available in Chrome 146 as for July 2026
+4,Modern Web Guidance,https://master.dev/blog/modern-web-guidance,"CSS,HTML,Javascript,Frontend,AI",02-07-2026,"Markdown files from Google to feed context on how to write better CSS, HTML and Javascript"
+5,Stop Paying $20/Month: Use NVIDIA's Free AI Models,https://blog.gopenai.com/stop-paying-20-month-use-nvidia-build-80-free-ai-models-0b08205f91b5,"AI, Tools",02-07-2026,NVIDIA free models https://build.nvidia.com/
+6,Cut Your Claude Token Consumption By 70x,https://levelup.gitconnected.com/cut-your-ai-token-consumption-by-70x-38b15cb75489,"AI, Tools",02-07-2026,Graphify will map your entire project into a knowledge graph you can query instead of grepping through files. More for full-stack
+7,Containers on Mac,https://githubdaily.medium.com/apple-container-1-0-released-running-linux-containers-on-mac-no-more-docker-needed-05804fc498e9,"Tools, Backend",02-07-2026,Container is Apple's official native macOS container tool to replace Docker
+8,Turn a codebase into an interactive knowledge graph,https://levelup.gitconnected.com/every-ai-coding-tool-just-quietly-standardized-on-one-developers-side-project-41574e56e3da,"AI, Tools",02-07-2026,More for frontend
+9,The database client your AI agent can actually use,https://tabularis.dev/,"Tools, Database",02-07-2026,The database client your AI agent can actually use
+10,Home of open source icon sets,https://iconify.design/,"Tools,Frontend",02-07-2026,"All popular icon sets, one framework. Over 200,000 open source vector icons."
+11,UnoCSS Instant On-demand Atomic CSS Engine,https://unocss.dev/,"Tools,Frontend,CSS",02-07-2026,On demand CSS generation
+12,Fast Node Manager (fnm),https://github.com/Schniz/fnm#shell-setup,"Tools,Node",02-07-2026,Alternative to nvm
+13,Biome,https://biomejs.dev/,"Tools,Frontend",02-07-2026,Alternative to ESlint and Prettier. Is a formatter and linter together

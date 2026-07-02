@@ -61,26 +61,16 @@ That's it. No npm, no build step.
 
 ## Tag conventions (optional)
 
-Suggested tag vocabulary — use whatever works for you:
+Tags currently in use — use whatever works for you:
 
-| Tag             | Use for                          |
-| --------------- | -------------------------------- |
-| `frontend`      | CSS, JS, browser APIs            |
-| `architecture`  | System design, patterns          |
-| `performance`   | Web perf, core web vitals        |
-| `accessibility` | a11y                             |
-| `design`        | Visual design, UX                |
-| `essay`         | Opinion pieces, long reads       |
-| `reference`     | Docs, cheatsheets, guides        |
-| `tooling`       | DX, build tools, editors         |
-| `career`        | Soft skills, engineering culture |
-
----
-
-## TODO
-
-- [x] Add favicon
-- [x] Add hot reload
-- [x] Set Biome
-- [] Add count to tags + color map from bigger to smaller
-- [] Change date format
+| Tag          | Use for                                |
+| ------------ | -------------------------------------- |
+| `Tools`      | DX, libraries, editors, utilities      |
+| `Frontend`   | CSS, JS, browser APIs, UI              |
+| `AI`         | AI models, LLMs, AI-assisted tooling   |
+| `CSS`        | Styling, layout, animations            |
+| `Javascript` | Language features, runtime, APIs       |
+| `Backend`    | Server-side, infrastructure            |
+| `Database`   | Databases, data clients                |
+| `HTML`       | Markup, semantics                      |
+| `Node`       | Node.js runtime and tooling            |

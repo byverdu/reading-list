@@ -198,9 +198,8 @@ body:has(#offline-banner:not([hidden])) .controls {
 	}
 
 	&.active {
-		background: var(--tag-active);
-		border-color: var(--accent);
-		color: var(--accent);
+		background: var(--heat);
+		color: var(--tag-bg);
 	}
 }
 

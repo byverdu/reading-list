@@ -74,3 +74,6 @@ Tags currently in use — use whatever works for you:
 | `Database`   | Databases, data clients                |
 | `HTML`       | Markup, semantics                      |
 | `Node`       | Node.js runtime and tooling            |
+| `Learning`   | What to learn next                     |
+| `Life`       | Opinion pieces                         |
+| `Design`     | Design and UX                          |

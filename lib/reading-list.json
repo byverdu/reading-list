@@ -1,7 +1,7 @@
 [
 	{
 		"id": "1",
-		"title": "online and offline events",
+		"title": "Online and offline events",
 		"url": "https://www.freecodecamp.org/news/how-to-check-internet-connection-status-with-javascript/",
 		"tags": ["Javascript", "Frontend"],
 		"date": "02-07-2026",
@@ -101,5 +101,228 @@
 		"tags": ["Tools", "Frontend"],
 		"date": "02-07-2026",
 		"notes": "Alternative to ESlint and Prettier. Is a formatter and linter together"
+	},
+	{
+		"id": "14",
+		"title": "MDN MCP server",
+		"url": "https://developer.mozilla.org/en-US/mcp",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "MDN's Model Context Protocol server for integrating documentation into AI-powered dev tools"
+	},
+	{
+		"id": "15",
+		"title": "Ending Responsive Images – Cloud Four",
+		"url": "https://cloudfour.com/thinks/ending-responsive-images/?ref=dailydev",
+		"tags": ["Frontend", "HTML"],
+		"date": "03-07-2026",
+		"notes": "Explores modern approaches to simplify or replace traditional responsive image techniques"
+	},
+	{
+		"id": "16",
+		"title": "Anthropic Courses",
+		"url": "https://anthropic.skilljar.com/",
+		"tags": ["AI", "Learning"],
+		"date": "03-07-2026",
+		"notes": "Official Anthropic learning platform with courses on using and building with Claude"
+	},
+	{
+		"id": "17",
+		"title": "Designing Rate Limiting for APIs: Algorithms Patterns and Implementation",
+		"url": "https://devops-daily.com/posts/designing-rate-limiting-for-apis?ref=dailydev",
+		"tags": ["Backend"],
+		"date": "03-07-2026",
+		"notes": "Deep dive into rate limiting strategies and algorithms for API design and protection"
+	},
+	{
+		"id": "18",
+		"title": "The Essential Guide to Creating Custom Context Menus in JavaScript",
+		"url": "https://javascript.plainenglish.io/the-essential-guide-to-creating-custom-context-menus-in-javascript-bed1331707e3",
+		"tags": ["Javascript", "HTML"],
+		"date": "03-07-2026",
+		"notes": "Step-by-step guide to building fully custom right-click context menus using vanilla JS"
+	},
+	{
+		"id": "19",
+		"title": "The Line Between the Two Americas Is Not Your Income. It Is Whether You Own Anything.",
+		"url": "https://medium.com/the-geopolitical-autopsy/the-line-between-the-two-americas-is-not-your-income-it-is-whether-you-own-anything-c0b2898bd7c3",
+		"tags": ["Life"],
+		"date": "03-07-2026",
+		"notes": "Opinion piece on wealth inequality and asset ownership as the real dividing line in America"
+	},
+	{
+		"id": "20",
+		"title": "The Dead Internet Theory Isn't a Conspiracy Anymore. It's an Infrastructure Crisis",
+		"url": "https://medium.com/the-tech-notes/the-dead-internet-theory-isnt-a-conspiracy-anymore-it-s-an-infrastructure-crisis-b986c4682e31",
+		"tags": ["Life", "AI"],
+		"date": "03-07-2026",
+		"notes": "Argues that bot-driven and AI-generated content has made the dead internet theory a real infrastructure problem"
+	},
+	{
+		"id": "21",
+		"title": "I Stopped Applying to \"Software Engineer\" Roles. Here's What I'd Target Instead.",
+		"url": "https://ai.plainenglish.io/four-tech-paths-where-hiring-hasnt-slowed-down-and-exactly-how-to-start-each-one-1a07ff19ff3a",
+		"tags": ["AI", "Learning", "Life"],
+		"date": "03-07-2026",
+		"notes": "Highlights four tech career paths still seeing active hiring despite a slow job market"
+	},
+	{
+		"id": "22",
+		"title": "TryHackMe | Hacktivities",
+		"url": "https://tryhackme.com/hacktivities",
+		"tags": ["Tools"],
+		"date": "03-07-2026",
+		"notes": "Interactive cybersecurity learning platform with hands-on hacking challenges and rooms"
+	},
+	{
+		"id": "23",
+		"title": "6 Developer Tools So Good They Feel Illegal in 2026",
+		"url": "https://medium.com/@hii_mohit/6-developer-tools-so-good-they-feel-illegal-in-2026-562642471ef0",
+		"tags": ["Tools"],
+		"date": "03-07-2026",
+		"notes": "Bruno alike Postman and so more"
+	},
+	{
+		"id": "24",
+		"title": "I Went Looking for the Best Local LLM for Coding in 2026. This Time My MacBook Could Actually Run It.",
+		"url": "https://ai.gopubby.com/i-went-looking-for-the-best-local-llm-for-coding-in-2026-7fa97efb34f1",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "Personal review of the best local LLMs for coding tasks runnable on Apple Silicon in 2026"
+	},
+	{
+		"id": "25",
+		"title": "The Codex Migration: Why Developers Are Leaving Claude Code",
+		"url": "https://medium.com/tech-and-ai-guild/the-codex-migration-why-developers-are-abandoning-claude-code-in-2026-eb84b0c904e4",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "Examines why some developers are switching from Claude Code to OpenAI Codex in 2026"
+	},
+	{
+		"id": "26",
+		"title": "Text vs Binary: How Dropping JSON Squeezed 5x More Throughput From Our APIs",
+		"url": "https://medium.com/@maahisoft20/forget-json-these-4-data-formats-made-my-apis-5x-faster-a43a7b3935d6",
+		"tags": ["Backend"],
+		"date": "03-07-2026",
+		"notes": "Compares JSON to binary data formats and shows how switching improved API throughput by 5x"
+	},
+	{
+		"id": "27",
+		"title": "JavaScript 2026: 5 New Features Every Developer Should Know",
+		"url": "https://javascript.plainenglish.io/javascript-2026-5-new-features-every-developer-should-know-51774901cebc",
+		"tags": ["Javascript"],
+		"date": "03-07-2026",
+		"notes": "Overview of five new JavaScript language features landing or gaining traction in 2026"
+	},
+	{
+		"id": "28",
+		"title": "Claude Code Has Four Agent Modes. Most Developers Only Use One.",
+		"url": "https://medium.com/@creativeaininja/claude-code-has-four-agent-modes-most-developers-only-use-one-276aea9a57d8",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "Breaks down Claude Code's four agent modes and how to leverage them for different tasks"
+	},
+	{
+		"id": "29",
+		"title": "You Shouldn't Be Prompting AI Anymore. You Should Be Designing Loops.",
+		"url": "https://ai.gopubby.com/you-shouldnt-be-prompting-ai-anymore-you-should-be-designing-loops-5f26de35b84c",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "Advocates for moving from one-shot prompting to designing agentic feedback loops with AI"
+	},
+	{
+		"id": "30",
+		"title": "Obscura The Headless Browser",
+		"url": "https://medium.com/@monikasinghal713/rust-strikes-again-meet-obscura-the-headless-browser-making-chrome-look-like-a-memory-hog-e1236ad88cea",
+		"tags": ["Tools"],
+		"date": "03-07-2026"
+	},
+	{
+		"id": "31",
+		"title": "I tried Pi after watching its founder explain why he quit Claude Code",
+		"url": "https://medium.com/@urvvil08/i-tried-pi-after-watching-its-founder-explain-why-he-quit-claude-code-7b747c37fa22",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "First-hand experience trying the Pi AI assistant after its founder publicly left Claude Code"
+	},
+	{
+		"id": "34",
+		"title": "You've been paying $600 a year for AI subscriptions. A $599 Mac Mini can replace all of them.",
+		"url": "https://medium.com/macoclock/youve-been-paying-600-a-year-for-ai-subscriptions-a-599-mac-mini-can-replace-all-of-them-3f0280182316",
+		"tags": ["AI"],
+		"date": "03-07-2026",
+		"notes": "Makes the case that a Mac Mini running local models can replace multiple paid AI subscriptions"
+	},
+	{
+		"id": "35",
+		"title": "8 Websites I Wish I Found Earlier in My Career",
+		"url": "https://kgabeci.medium.com/8-websites-i-wish-i-found-earlier-in-my-career-e6625ef4c8e3",
+		"tags": ["Tools"],
+		"date": "03-07-2026",
+		"notes": "Curated list of eight valuable websites and resources for developers at any career stage"
+	},
+	{
+		"id": "36",
+		"title": "8 Niche Developer Tools You Didn't Know Existed",
+		"url": "https://medium.com/codetodeploy/8-niche-developer-tools-you-didnt-know-existed-96eeaf1724a3",
+		"tags": ["Tools"],
+		"date": "03-07-2026",
+		"notes": "explainshell.com,crontab.guru,pgexercises.com,jsoncrack.com,devdocs.,sqlfiddle.com and dbfiddle.com"
+	},
+	{
+		"id": "37",
+		"title": "The Shifting Line Between CSS States and JavaScript Events | CSS-Tricks",
+		"url": "https://css-tricks.com/css-states-and-javascript-events/?ref=dailydev",
+		"tags": ["CSS", "Frontend", "Javascript"],
+		"date": "03-07-2026",
+		"notes": "Explores how modern CSS can handle UI states that previously required JavaScript event listeners"
+	},
+	{
+		"id": "39",
+		"title": "6 HTML5 Features That Instantly Made My Websites Feel \"Premium\"",
+		"url": "https://medium.com/codetodeploy/6-html5-features-that-instantly-made-my-websites-feel-premium-401d2c3f3184",
+		"tags": ["HTML", "Frontend"],
+		"date": "03-07-2026",
+		"notes": "Six underused HTML5 features that add a polished and premium feel to websites"
+	},
+	{
+		"id": "40",
+		"title": "Stop Treating HTML5 Like Just Markup — These 8 Features Changed How I Code",
+		"url": "https://medium.com/codetodeploy/stop-treating-html5-like-just-markup-these-8-features-changed-how-i-code-182679a31eee",
+		"tags": ["HTML", "Frontend"],
+		"date": "03-07-2026",
+		"notes": "Eight powerful HTML5 features that go beyond markup and change how developers write code"
+	},
+	{
+		"id": "41",
+		"title": "Why Certain JavaScript Code Patterns Hurt V8 Performance",
+		"url": "https://javascript.plainenglish.io/why-certain-javascript-code-patterns-hurt-v8-performance-b0aec0e4f759",
+		"tags": ["Javascript", "Node"],
+		"date": "03-07-2026",
+		"notes": "Explains specific JS coding patterns that negatively impact V8 engine performance and how to avoid them"
+	},
+	{
+		"id": "42",
+		"title": "The Six Frontend Capabilities That Quietly Separate Senior Engineers",
+		"url": "https://medium.com/@reactjsbd/the-six-frontend-capabilities-that-quietly-separate-senior-engineers-from-everyone-else-in-2026-4b58c25fd426",
+		"tags": ["Javascript", "Learning"],
+		"date": "03-07-2026",
+		"notes": ""
+	},
+	{
+		"id": "43",
+		"title": "Bento Box Menus: A Better Way to Navigate Lists",
+		"url": "https://uxmovement.medium.com/bento-box-menus-a-better-way-to-navigate-lists-8bb761320985",
+		"tags": ["Design", "Frontend"],
+		"date": "03-07-2026",
+		"notes": ""
+	},
+	{
+		"id": "44",
+		"title": "Hono",
+		"url": "https://hono.dev/",
+		"tags": ["Backend", "Javascript", "Node", "Tools"],
+		"date": "03-07-2026",
+		"notes": "Web application framework, Express alike"
 	}
 ]

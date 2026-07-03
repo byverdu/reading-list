@@ -324,5 +324,12 @@
 		"tags": ["Backend", "Javascript", "Node", "Tools"],
 		"date": "03-07-2026",
 		"notes": "Web application framework, Express alike"
+	},
+	{
+		"id": "45",
+		"title": "How to Become a Senior Software Engineer?",
+		"url": "https://geekswithblogs.net/mwatson/how-to-become-a-senior-software-engineer",
+		"tags": ["Learning"],
+		"date": "03-07-2026"
 	}
 ]

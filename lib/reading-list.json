@@ -331,5 +331,100 @@
 		"url": "https://geekswithblogs.net/mwatson/how-to-become-a-senior-software-engineer",
 		"tags": ["Learning"],
 		"date": "03-07-2026"
+	},
+	{
+		"id": "46",
+		"title": "Forget JSON Web Tokens: Server-Side Sessions Cut Our Auth Bugs By 70%",
+		"url": "https://medium.com/@maahisoft20/forget-json-web-tokens-server-side-sessions-cut-our-auth-bugs-by-70-d6a90594cace",
+		"tags": ["Backend", "Node"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "47",
+		"title": "BroadcastChannel Is a Small API With a Big Architectural Use",
+		"url": "https://medium.com/skillstuff/the-browser-api-most-developers-have-never-used-1fe3c9089aff",
+		"tags": ["Frontend", "Javascript"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "48",
+		"title": "CSS border-shape Property",
+		"url": "https://css-tricks.com/get-ready-for-the-powerful-css-border-shape-property/?ref=dailydev",
+		"tags": ["Frontend", "CSS"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "49",
+		"title": "Why Your Mac LLM Just Died — And the Missing Piece Nobody Talks About",
+		"url": "https://medium.com/@rajveer.rathod1301/why-your-mac-llm-just-died-and-the-missing-piece-nobody-talks-about-240039733d6a",
+		"tags": ["AI", "Mac", "Tech"],
+		"date": "23-07-2026",
+		"notes": "How to improve local LLM with Mac"
+	},
+	{
+		"id": "50",
+		"title": "The new HTTP method : QUERY",
+		"url": "https://dev.to/tykok/the-new-http-method-query-2bec",
+		"tags": ["Backend", "Database"],
+		"date": "23-07-2026",
+		"notes": "Replaces quirks between POST and GET for multiple queryStrings"
+	},
+	{
+		"id": "51",
+		"title": "Realtime Without a WebSocket Service",
+		"url": "https://devops-daily.com/posts/neon-functions-realtime-without-websockets",
+		"tags": ["Backend", "Database"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "52",
+		"title": "7 MCPs to Claude",
+		"url": "https://mdanassaif.medium.com/i-connected-these-7-mcps-to-claude-im-never-going-back-b9f433b82a5b",
+		"tags": ["AI"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "53",
+		"title": "Transition Display: None!",
+		"url": "https://kentondejong.medium.com/we-can-finally-transition-display-none-cbb03831351f",
+		"tags": ["Frontend", "CSS"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "54",
+		"title": "Container scroll-state queries",
+		"url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries",
+		"tags": ["Frontend", "CSS"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "55",
+		"title": "Boundary-Aware Styling in CSS",
+		"url": "https://master.dev/blog/boundary-aware-styling-in-css/",
+		"tags": ["Frontend", "CSS"],
+		"date": "23-07-2026"
+	},
+	{
+		"id": "56",
+		"title": "JavaScript Generators: Everyone Learns This. But Nobody Uses It",
+		"url": "https://medium.com/@TusharKanjariya/javascript-generators-everyone-learns-this-but-nobody-uses-it-487f1f457e55",
+		"tags": ["Frontend", "Javascript"],
+		"date": "23-07-2026",
+		"notes": "Use it for Pagination, Grids, Sequences"
+	},
+	{
+		"id": "57",
+		"title": "CSS June 2026: 3 Features That Shrink Your JavaScript Codebase",
+		"url": "https://medium.com/codex/css-june-2026-3-features-that-shrink-your-javascript-codebase-d0cb507ce390",
+		"tags": ["Frontend", "CSS", "HTML", "Javascript"],
+		"date": "23-07-2026",
+		"notes": "field-sizing: content, Gap Decorations and background-clip: border-area"
+	},
+	{
+		"id": "58",
+		"title": "Squircles on the Web — Houdini to the rescue",
+		"url": "https://pavellaptev.medium.com/squircles-on-the-web-houdini-to-the-rescue-5ef11f646b72",
+		"tags": ["Frontend", "CSS"],
+		"date": "23-07-2026"
 	}
 ]

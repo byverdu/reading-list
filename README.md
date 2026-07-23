@@ -77,3 +77,5 @@ Tags currently in use — use whatever works for you:
 | `Learning`   | What to learn next                     |
 | `Life`       | Opinion pieces                         |
 | `Design`     | Design and UX                          |
+| `Mac`        | Apple stuff                            |
+| `Tech`       | Overall Technology                     |

@@ -305,9 +305,9 @@
 		"id": "42",
 		"title": "The Six Frontend Capabilities That Quietly Separate Senior Engineers",
 		"url": "https://medium.com/@reactjsbd/the-six-frontend-capabilities-that-quietly-separate-senior-engineers-from-everyone-else-in-2026-4b58c25fd426",
-		"tags": ["Javascript", "Learning"],
+		"tags": ["Javascript", "Learning", "CSS", "Accessibility"],
 		"date": "03-07-2026",
-		"notes": ""
+		"notes": "Performance, Accessibility"
 	},
 	{
 		"id": "43",
@@ -426,5 +426,12 @@
 		"url": "https://pavellaptev.medium.com/squircles-on-the-web-houdini-to-the-rescue-5ef11f646b72",
 		"tags": ["Frontend", "CSS"],
 		"date": "23-07-2026"
+	},
+	{
+		"id": "59",
+		"title": "The Frontend Performance Taxonomy",
+		"url": "https://medium.com/@ethanhaller02/the-frontend-performance-taxonomy-decd58757b30",
+		"tags": ["Frontend", "Javascript"],
+		"date": "24-07-2026"
 	}
 ]

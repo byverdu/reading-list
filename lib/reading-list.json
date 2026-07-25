@@ -433,5 +433,13 @@
 		"url": "https://medium.com/@ethanhaller02/the-frontend-performance-taxonomy-decd58757b30",
 		"tags": ["Frontend", "Javascript"],
 		"date": "24-07-2026"
+	},
+	{
+		"id": "60",
+		"title": "The Browser Is Becoming an Operating System",
+		"url": "https://medium.com/front-end-world/the-browser-is-becoming-an-operating-system-most-developers-havent-realized-it-yet-57defa8968ee",
+		"tags": ["Frontend", "Javascript", "Tools", "Database"],
+		"date": "25-07-2026",
+		"notes": "File System Access, Compress Images, Service Workers, own database even create PDFs"
 	}
 ]

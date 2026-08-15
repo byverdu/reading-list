@@ -441,5 +441,13 @@
 		"tags": ["Frontend", "Javascript", "Tools", "Database"],
 		"date": "25-07-2026",
 		"notes": "File System Access, Compress Images, Service Workers, own database even create PDFs"
+	},
+	{
+		"id": "61",
+		"title": "Chrome Extension Guide",
+		"url": "https://bestchromeextensions.com/",
+		"tags": ["Frontend", "Javascript", "Tools"],
+		"date": "15-08-2026",
+		"notes": ""
 	}
 ]

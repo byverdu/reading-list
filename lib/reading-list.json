@@ -305,9 +305,9 @@
 		"id": "42",
 		"title": "The Six Frontend Capabilities That Quietly Separate Senior Engineers",
 		"url": "https://medium.com/@reactjsbd/the-six-frontend-capabilities-that-quietly-separate-senior-engineers-from-everyone-else-in-2026-4b58c25fd426",
-		"tags": ["Javascript", "Learning"],
+		"tags": ["Javascript", "Learning", "CSS", "Accessibility"],
 		"date": "03-07-2026",
-		"notes": ""
+		"notes": "Performance, Accessibility"
 	},
 	{
 		"id": "43",
@@ -429,13 +429,36 @@
 	},
 	{
 		"id": "59",
+		"title": "The Frontend Performance Taxonomy",
+		"url": "https://medium.com/@ethanhaller02/the-frontend-performance-taxonomy-decd58757b30",
+		"tags": ["Frontend", "Javascript"],
+		"date": "24-07-2026"
+	},
+	{
+		"id": "60",
+		"title": "The Browser Is Becoming an Operating System",
+		"url": "https://medium.com/front-end-world/the-browser-is-becoming-an-operating-system-most-developers-havent-realized-it-yet-57defa8968ee",
+		"tags": ["Frontend", "Javascript", "Tools", "Database"],
+		"date": "25-07-2026",
+		"notes": "File System Access, Compress Images, Service Workers, own database even create PDFs"
+	},
+	{
+		"id": "61",
+		"title": "Chrome Extension Guide",
+		"url": "https://bestchromeextensions.com/",
+		"tags": ["Frontend", "Javascript", "Tools"],
+		"date": "15-08-2026",
+		"notes": ""
+	},
+	{
+		"id": "62",
 		"title": "Selecting previous siblings with CSS :has()",
 		"url": "https://tobiasahlin.com/blog/previous-sibling-css-has/",
 		"tags": ["Frontend", "CSS"],
 		"date": "01-10-2026"
 	},
 	{
-		"id": "60",
+		"id": "63",
 		"title": "Gap After the List Marker",
 		"url": "https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/",
 		"tags": ["Frontend", "CSS"],

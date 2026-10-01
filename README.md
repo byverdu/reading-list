@@ -63,19 +63,20 @@ That's it. No npm, no build step.
 
 Tags currently in use — use whatever works for you:
 
-| Tag          | Use for                                |
-| ------------ | -------------------------------------- |
-| `Tools`      | DX, libraries, editors, utilities      |
-| `Frontend`   | CSS, JS, browser APIs, UI              |
-| `AI`         | AI models, LLMs, AI-assisted tooling   |
-| `CSS`        | Styling, layout, animations            |
-| `Javascript` | Language features, runtime, APIs       |
-| `Backend`    | Server-side, infrastructure            |
-| `Database`   | Databases, data clients                |
-| `HTML`       | Markup, semantics                      |
-| `Node`       | Node.js runtime and tooling            |
-| `Learning`   | What to learn next                     |
-| `Life`       | Opinion pieces                         |
-| `Design`     | Design and UX                          |
-| `Mac`        | Apple stuff                            |
-| `Tech`       | Overall Technology                     |
+| Tag             | Use for                                |
+| --------------- | -------------------------------------- |
+| `Tools`         | DX, libraries, editors, utilities      |
+| `Frontend`      | CSS, JS, browser APIs, UI              |
+| `AI`            | AI models, LLMs, AI-assisted tooling   |
+| `CSS`           | Styling, layout, animations            |
+| `Javascript`    | Language features, runtime, APIs       |
+| `Backend`       | Server-side, infrastructure            |
+| `Database`      | Databases, data clients                |
+| `HTML`          | Markup, semantics                      |
+| `Node`          | Node.js runtime and tooling            |
+| `Learning`      | What to learn next                     |
+| `Life`          | Opinion pieces                         |
+| `Design`        | Design and UX                          |
+| `Mac`           | Apple stuff                            |
+| `Tech`          | Overall Technology                     |
+| `Accessibility` | Because it really matters              |

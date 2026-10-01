@@ -426,5 +426,19 @@
 		"url": "https://pavellaptev.medium.com/squircles-on-the-web-houdini-to-the-rescue-5ef11f646b72",
 		"tags": ["Frontend", "CSS"],
 		"date": "23-07-2026"
+	},
+	{
+		"id": "59",
+		"title": "Selecting previous siblings with CSS :has()",
+		"url": "https://tobiasahlin.com/blog/previous-sibling-css-has/",
+		"tags": ["Frontend", "CSS"],
+		"date": "01-10-2026"
+	},
+	{
+		"id": "60",
+		"title": "Gap After the List Marker",
+		"url": "https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/",
+		"tags": ["Frontend", "CSS"],
+		"date": "01-10-2026"
 	}
 ]

@@ -463,5 +463,42 @@
 		"url": "https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/",
 		"tags": ["Frontend", "CSS"],
 		"date": "01-10-2026"
+	},
+	{
+		"id": "64",
+		"title": "The Browser's Main Thread Is Expensive",
+		"url": "https://kciter.so/posts/the-expensive-main-thread/en/",
+		"tags": ["Frontend", "Javascript"],
+		"date": "14-10-2026"
+	},
+	{
+		"id": "65",
+		"title": "The essential checklist for modern web development",
+		"url": "https://frontendchecklist.io/",
+		"tags": ["Frontend", "Javascript", "HTML", "CSS", "Accessibility"],
+		"date": "14-10-2026",
+		"notes": "350+ rules across launch, review, accessibility, performance, security, privacy, and SEO workflows."
+	},
+	{
+		"id": "66",
+		"title": "CSS Typed OM",
+		"url": "https://www.bram.us/2026/10/13/introducing-css-typed-om-a-complete-and-wpt-tested-polyfill-for-css-typed-om/?via=dailydev",
+		"tags": ["Frontend", "CSS", "Tools"],
+		"date": "14-10-2026",
+		"notes": "polyfill for CSS Typed OM"
+	},
+	{
+		"id": "67",
+		"title": "Container style queries and advanced attr()",
+		"url": "https://utilitybend.com/blog/container-style-queries-and-advanced-attr-rethinking-how-to-wire-up-my-components-in-css",
+		"tags": ["Frontend", "CSS"],
+		"date": "14-10-2026"
+	},
+	{
+		"id": "68",
+		"title": "A way to style gaps in grid and flex",
+		"url": "https://utilitybend.com/blog/css-is-filling-the-gaps-with-rules-a-way-to-style-gaps-in-grid-and-flex",
+		"tags": ["Frontend", "CSS"],
+		"date": "14-10-2026"
 	}
 ]

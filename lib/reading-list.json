@@ -507,5 +507,26 @@
 		"url": "https://utilitybend.com/blog/css-is-filling-the-gaps-with-rules-a-way-to-style-gaps-in-grid-and-flex",
 		"tags": ["Tools", "Mac"],
 		"date": "14-10-2026"
+	},
+	{
+		"id": "70",
+		"title": "Custom Functions in CSS using @function",
+		"url": "https://salehmubashar.com/blog/css-functions",
+		"tags": ["CSS", "Frontend"],
+		"date": "19-10-2026"
+	},
+	{
+		"id": "71",
+		"title": "Simplifying Entry Animations with @starting-style",
+		"url": "https://salehmubashar.com/blog/simplifying-entry-animations-with-starting-style",
+		"tags": ["CSS", "Frontend"],
+		"date": "19-10-2026"
+	},
+	{
+		"id": "72",
+		"title": "Style HTML Selects",
+		"url": "https://salehmubashar.com/blog/html-selects-are-actually-styleable-now",
+		"tags": ["CSS", "Frontend"],
+		"date": "19-10-2026"
 	}
 ]

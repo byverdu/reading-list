@@ -528,5 +528,12 @@
 		"url": "https://salehmubashar.com/blog/html-selects-are-actually-styleable-now",
 		"tags": ["CSS", "Frontend"],
 		"date": "19-10-2026"
+	},
+	{
+		"id": "73",
+		"title": "TypeScript Course",
+		"url": "",
+		"tags": ["Javascript", "Frontend", "Learning"],
+		"date": "03-11-2026"
 	}
 ]

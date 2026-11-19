@@ -740,13 +740,13 @@
   },
   {
     "id": "70",
-    "title": "TypeScript Course",
-    "url": "",
+    "title": "CSS Features that can replace JavaScript",
+    "url": "https://medium.com/codex/the-most-anticipated-css-features-of-2026-browsers-can-now-replace-a-lot-of-javascript-c8e9328f4e89",
     "tags": [
-      "Javascript",
-      "Frontend",
-      "Learning"
+      "CSS",
+      "Frontend"
     ],
-    "date": "03-11-2026"
+    "date": "19-11-2026",
+    "notes": "CSS Anchor Positioning, @scope, @starting-style, Scroll-Driven Animations, Container Scroll-State, View Transitions, Customizable <select>, CSS if(), CSS Grid Masonry, sibling-index()"
   }
 ]

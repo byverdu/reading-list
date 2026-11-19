@@ -331,7 +331,7 @@
     "notes": "First-hand experience trying the Pi AI assistant after its founder publicly left Claude Code"
   },
   {
-    "id": "34",
+    "id": "32",
     "title": "You've been paying $600 a year for AI subscriptions. A $599 Mac Mini can replace all of them.",
     "url": "https://medium.com/macoclock/youve-been-paying-600-a-year-for-ai-subscriptions-a-599-mac-mini-can-replace-all-of-them-3f0280182316",
     "tags": [
@@ -341,7 +341,7 @@
     "notes": "Makes the case that a Mac Mini running local models can replace multiple paid AI subscriptions"
   },
   {
-    "id": "35",
+    "id": "33",
     "title": "8 Websites I Wish I Found Earlier in My Career",
     "url": "https://kgabeci.medium.com/8-websites-i-wish-i-found-earlier-in-my-career-e6625ef4c8e3",
     "tags": [
@@ -351,7 +351,7 @@
     "notes": "Curated list of eight valuable websites and resources for developers at any career stage"
   },
   {
-    "id": "36",
+    "id": "34",
     "title": "8 Niche Developer Tools You Didn't Know Existed",
     "url": "https://medium.com/codetodeploy/8-niche-developer-tools-you-didnt-know-existed-96eeaf1724a3",
     "tags": [
@@ -361,7 +361,7 @@
     "notes": "explainshell.com,crontab.guru,pgexercises.com,jsoncrack.com,devdocs.,sqlfiddle.com and dbfiddle.com"
   },
   {
-    "id": "37",
+    "id": "35",
     "title": "The Shifting Line Between CSS States and JavaScript Events | CSS-Tricks",
     "url": "https://css-tricks.com/css-states-and-javascript-events/?ref=dailydev",
     "tags": [
@@ -373,7 +373,7 @@
     "notes": "Explores how modern CSS can handle UI states that previously required JavaScript event listeners"
   },
   {
-    "id": "39",
+    "id": "36",
     "title": "6 HTML5 Features That Instantly Made My Websites Feel \"Premium\"",
     "url": "https://medium.com/codetodeploy/6-html5-features-that-instantly-made-my-websites-feel-premium-401d2c3f3184",
     "tags": [
@@ -384,7 +384,7 @@
     "notes": "Six underused HTML5 features that add a polished and premium feel to websites"
   },
   {
-    "id": "40",
+    "id": "37",
     "title": "Stop Treating HTML5 Like Just Markup — These 8 Features Changed How I Code",
     "url": "https://medium.com/codetodeploy/stop-treating-html5-like-just-markup-these-8-features-changed-how-i-code-182679a31eee",
     "tags": [
@@ -395,7 +395,7 @@
     "notes": "Eight powerful HTML5 features that go beyond markup and change how developers write code"
   },
   {
-    "id": "41",
+    "id": "38",
     "title": "Why Certain JavaScript Code Patterns Hurt V8 Performance",
     "url": "https://javascript.plainenglish.io/why-certain-javascript-code-patterns-hurt-v8-performance-b0aec0e4f759",
     "tags": [
@@ -406,7 +406,7 @@
     "notes": "Explains specific JS coding patterns that negatively impact V8 engine performance and how to avoid them"
   },
   {
-    "id": "42",
+    "id": "39",
     "title": "The Six Frontend Capabilities That Quietly Separate Senior Engineers",
     "url": "https://medium.com/@reactjsbd/the-six-frontend-capabilities-that-quietly-separate-senior-engineers-from-everyone-else-in-2026-4b58c25fd426",
     "tags": [
@@ -419,7 +419,7 @@
     "notes": "Performance, Accessibility"
   },
   {
-    "id": "43",
+    "id": "40",
     "title": "Bento Box Menus: A Better Way to Navigate Lists",
     "url": "https://uxmovement.medium.com/bento-box-menus-a-better-way-to-navigate-lists-8bb761320985",
     "tags": [
@@ -430,7 +430,7 @@
     "notes": ""
   },
   {
-    "id": "44",
+    "id": "41",
     "title": "Hono",
     "url": "https://hono.dev/",
     "tags": [
@@ -443,7 +443,7 @@
     "notes": "Web application framework, Express alike"
   },
   {
-    "id": "45",
+    "id": "42",
     "title": "How to Become a Senior Software Engineer?",
     "url": "https://geekswithblogs.net/mwatson/how-to-become-a-senior-software-engineer",
     "tags": [
@@ -452,7 +452,7 @@
     "date": "03-07-2026"
   },
   {
-    "id": "46",
+    "id": "43",
     "title": "Forget JSON Web Tokens: Server-Side Sessions Cut Our Auth Bugs By 70%",
     "url": "https://medium.com/@maahisoft20/forget-json-web-tokens-server-side-sessions-cut-our-auth-bugs-by-70-d6a90594cace",
     "tags": [
@@ -462,7 +462,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "47",
+    "id": "44",
     "title": "BroadcastChannel Is a Small API With a Big Architectural Use",
     "url": "https://medium.com/skillstuff/the-browser-api-most-developers-have-never-used-1fe3c9089aff",
     "tags": [
@@ -472,7 +472,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "48",
+    "id": "45",
     "title": "CSS border-shape Property",
     "url": "https://css-tricks.com/get-ready-for-the-powerful-css-border-shape-property/?ref=dailydev",
     "tags": [
@@ -482,7 +482,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "49",
+    "id": "46",
     "title": "Why Your Mac LLM Just Died — And the Missing Piece Nobody Talks About",
     "url": "https://medium.com/@rajveer.rathod1301/why-your-mac-llm-just-died-and-the-missing-piece-nobody-talks-about-240039733d6a",
     "tags": [
@@ -494,7 +494,7 @@
     "notes": "How to improve local LLM with Mac"
   },
   {
-    "id": "50",
+    "id": "47",
     "title": "The new HTTP method : QUERY",
     "url": "https://dev.to/tykok/the-new-http-method-query-2bec",
     "tags": [
@@ -505,7 +505,7 @@
     "notes": "Replaces quirks between POST and GET for multiple queryStrings"
   },
   {
-    "id": "51",
+    "id": "48",
     "title": "Realtime Without a WebSocket Service",
     "url": "https://devops-daily.com/posts/neon-functions-realtime-without-websockets",
     "tags": [
@@ -515,7 +515,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "52",
+    "id": "49",
     "title": "7 MCPs to Claude",
     "url": "https://mdanassaif.medium.com/i-connected-these-7-mcps-to-claude-im-never-going-back-b9f433b82a5b",
     "tags": [
@@ -524,7 +524,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "53",
+    "id": "50",
     "title": "Transition Display: None!",
     "url": "https://kentondejong.medium.com/we-can-finally-transition-display-none-cbb03831351f",
     "tags": [
@@ -534,7 +534,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "54",
+    "id": "51",
     "title": "Container scroll-state queries",
     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries",
     "tags": [
@@ -544,7 +544,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "55",
+    "id": "52",
     "title": "Boundary-Aware Styling in CSS",
     "url": "https://master.dev/blog/boundary-aware-styling-in-css/",
     "tags": [
@@ -554,7 +554,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "56",
+    "id": "53",
     "title": "JavaScript Generators: Everyone Learns This. But Nobody Uses It",
     "url": "https://medium.com/@TusharKanjariya/javascript-generators-everyone-learns-this-but-nobody-uses-it-487f1f457e55",
     "tags": [
@@ -565,7 +565,7 @@
     "notes": "Use it for Pagination, Grids, Sequences"
   },
   {
-    "id": "57",
+    "id": "54",
     "title": "CSS June 2026: 3 Features That Shrink Your JavaScript Codebase",
     "url": "https://medium.com/codex/css-june-2026-3-features-that-shrink-your-javascript-codebase-d0cb507ce390",
     "tags": [
@@ -578,7 +578,7 @@
     "notes": "field-sizing: content, Gap Decorations and background-clip: border-area"
   },
   {
-    "id": "58",
+    "id": "55",
     "title": "Squircles on the Web — Houdini to the rescue",
     "url": "https://pavellaptev.medium.com/squircles-on-the-web-houdini-to-the-rescue-5ef11f646b72",
     "tags": [
@@ -588,7 +588,7 @@
     "date": "23-07-2026"
   },
   {
-    "id": "59",
+    "id": "56",
     "title": "The Frontend Performance Taxonomy",
     "url": "https://medium.com/@ethanhaller02/the-frontend-performance-taxonomy-decd58757b30",
     "tags": [
@@ -598,7 +598,7 @@
     "date": "24-07-2026"
   },
   {
-    "id": "60",
+    "id": "57",
     "title": "The Browser Is Becoming an Operating System",
     "url": "https://medium.com/front-end-world/the-browser-is-becoming-an-operating-system-most-developers-havent-realized-it-yet-57defa8968ee",
     "tags": [
@@ -611,7 +611,7 @@
     "notes": "File System Access, Compress Images, Service Workers, own database even create PDFs"
   },
   {
-    "id": "61",
+    "id": "58",
     "title": "Chrome Extension Guide",
     "url": "https://bestchromeextensions.com/",
     "tags": [
@@ -623,7 +623,7 @@
     "notes": ""
   },
   {
-    "id": "62",
+    "id": "59",
     "title": "Selecting previous siblings with CSS :has()",
     "url": "https://tobiasahlin.com/blog/previous-sibling-css-has/",
     "tags": [
@@ -633,7 +633,7 @@
     "date": "01-10-2026"
   },
   {
-    "id": "63",
+    "id": "60",
     "title": "Gap After the List Marker",
     "url": "https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/",
     "tags": [
@@ -643,7 +643,7 @@
     "date": "01-10-2026"
   },
   {
-    "id": "64",
+    "id": "61",
     "title": "The Browser's Main Thread Is Expensive",
     "url": "https://kciter.so/posts/the-expensive-main-thread/en/",
     "tags": [
@@ -653,7 +653,7 @@
     "date": "14-10-2026"
   },
   {
-    "id": "65",
+    "id": "62",
     "title": "The essential checklist for modern web development",
     "url": "https://frontendchecklist.io/",
     "tags": [
@@ -667,7 +667,7 @@
     "notes": "350+ rules across launch, review, accessibility, performance, security, privacy, and SEO workflows."
   },
   {
-    "id": "66",
+    "id": "63",
     "title": "CSS Typed OM",
     "url": "https://www.bram.us/2026/10/13/introducing-css-typed-om-a-complete-and-wpt-tested-polyfill-for-css-typed-om/?via=dailydev",
     "tags": [
@@ -679,7 +679,7 @@
     "notes": "polyfill for CSS Typed OM"
   },
   {
-    "id": "67",
+    "id": "64",
     "title": "Container style queries and advanced attr()",
     "url": "https://utilitybend.com/blog/container-style-queries-and-advanced-attr-rethinking-how-to-wire-up-my-components-in-css",
     "tags": [
@@ -689,7 +689,7 @@
     "date": "14-10-2026"
   },
   {
-    "id": "68",
+    "id": "65",
     "title": "A way to style gaps in grid and flex",
     "url": "https://utilitybend.com/blog/css-is-filling-the-gaps-with-rules-a-way-to-style-gaps-in-grid-and-flex",
     "tags": [
@@ -699,7 +699,7 @@
     "date": "14-10-2026"
   },
   {
-    "id": "69",
+    "id": "66",
     "title": "One wallpaper across every monitor",
     "url": "https://github.com/spreadpaper/SpreadPaper",
     "tags": [
@@ -709,7 +709,7 @@
     "date": "14-10-2026"
   },
   {
-    "id": "70",
+    "id": "67",
     "title": "Custom Functions in CSS using @function",
     "url": "https://salehmubashar.com/blog/css-functions",
     "tags": [
@@ -719,7 +719,7 @@
     "date": "19-10-2026"
   },
   {
-    "id": "71",
+    "id": "68",
     "title": "Simplifying Entry Animations with @starting-style",
     "url": "https://salehmubashar.com/blog/simplifying-entry-animations-with-starting-style",
     "tags": [
@@ -729,7 +729,7 @@
     "date": "19-10-2026"
   },
   {
-    "id": "72",
+    "id": "69",
     "title": "Style HTML Selects",
     "url": "https://salehmubashar.com/blog/html-selects-are-actually-styleable-now",
     "tags": [
@@ -739,7 +739,7 @@
     "date": "19-10-2026"
   },
   {
-    "id": "73",
+    "id": "70",
     "title": "TypeScript Course",
     "url": "",
     "tags": [

@@ -55,7 +55,7 @@ Push to `main` — GitHub Actions deploys automatically in ~30 seconds.
 3. Go to **Settings → Pages → Source** → select **GitHub Actions**
 4. Push any change to `main` to trigger the first deploy
 
-That's it. No npm, no build step.
+That's it. No npm, no build step. Plain CSS and JS :)
 
 ---
 

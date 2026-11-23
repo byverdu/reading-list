@@ -748,5 +748,14 @@
     ],
     "date": "19-11-2026",
     "notes": "CSS Anchor Positioning, @scope, @starting-style, Scroll-Driven Animations, Container Scroll-State, View Transitions, Customizable <select>, CSS if(), CSS Grid Masonry, sibling-index()"
+  },
+  {
+    "id": "71",
+    "title": "Netflix FE interview",
+    "url": "https://medium.com/frontend-army/netflix-frontend-engineer-interview-experience-420k-2026-805bf38cf3ed",
+    "tags": [
+      "Frontend"
+    ],
+    "date": "23-11-2026"
   }
 ]
